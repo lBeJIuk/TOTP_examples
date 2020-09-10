@@ -14,7 +14,7 @@ for _ in range(0, 8):
 
 hs = bytearray(hmac.new(secret, bytes, hashlib.sha1).digest())
 
-n = hs[-1] & 0xF
+n = hs[19] & 0xF
 result = (hs[n] << 24 | hs[n + 1] << 16 | hs[n + 2] << 8 | hs[n + 3]) & 0x7fffffff
 
 print(str(result)[-6:])
