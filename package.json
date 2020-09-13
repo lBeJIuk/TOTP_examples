@@ -1,0 +1,22 @@
+{
+  "name": "totp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lBeJIuk/TOTP_examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lBeJIuk/TOTP_examples/issues"
+  },
+  "homepage": "https://github.com/lBeJIuk/TOTP_examples#readme",
+  "dependencies": {
+    "base32.js": "^0.1.0"
+  }
+}

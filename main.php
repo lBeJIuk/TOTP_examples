@@ -95,7 +95,6 @@
   }
   $bytes = pack('C*', $c7, $c6, $c5, $c4, $c3, $c2, $c1, $c0);
   $hs = hash_hmac('sha1', $bytes, $secret, true);
-  $hs1 = hash_hmac('sha1', $bytes, $secret);
 
   $n = unpack('C', $hs[19])[1] & 0xF;
   $result = (un($hs, $n) << 24 | un($hs, $n + 1) << 16 | un($hs, $n + 2) << 8 | un($hs, $n + 3)) & 0x7fffffff;
